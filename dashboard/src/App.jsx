@@ -21,7 +21,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://hostpital-mern.vercel.app/api/v1/user/admin/me",
+          "https://hostpital-mern-backend.vercel.app/api/v1/user/admin/me",
           {
             withCredentials: true,
           }
