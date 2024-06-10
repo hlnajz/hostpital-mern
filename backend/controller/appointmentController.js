@@ -103,18 +103,7 @@ export const updateAppointmentStatus = catchAsyncErrors(
     });
   }
 );
-// export const deleteAppointment = catchAsyncErrors(async (req, res, next) => {
-//   const { id } = req.params;
-//   const appointment = await Appointment.findById(id);
-//   if (!appointment) {
-//     return next(new ErrorHandler("Appointment Not Found!", 404));
-//   }
-//   await appointment.deleteOne();
-//   res.status(200).json({
-//     success: true,
-//     message: "Appointment Deleted!",
-//   });
-// });
+
 
 export const deleteAppointment = catchAsyncErrors(async (req, res, next) => {
   const { id } = req.params;
