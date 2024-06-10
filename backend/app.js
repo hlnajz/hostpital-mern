@@ -14,7 +14,7 @@ config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: ["https://hostpital-mern-frontend.vercel.app/"],
+    origin: ["https://hostpital-mern-frontend.vercel.app"],
     method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
